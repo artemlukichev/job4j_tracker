@@ -15,3 +15,4 @@ public abstract class Vehicle {
         System.out.println("Стандартная тормозная система");
     }
 }
+
