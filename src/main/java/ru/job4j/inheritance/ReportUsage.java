@@ -7,3 +7,4 @@ public class ReportUsage extends TextReport {
         System.out.println(text);
     }
 }
+

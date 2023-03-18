@@ -14,3 +14,4 @@ public class HtmlReport extends TextReport {
         System.out.println(text);
     }
 }
+
