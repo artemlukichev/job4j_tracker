@@ -15,3 +15,4 @@ public class HtmlReport extends TextReport {
     }
 }
 
+
