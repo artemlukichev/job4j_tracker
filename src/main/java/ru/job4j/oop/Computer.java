@@ -17,6 +17,11 @@ public class Computer {
     public Computer() {
     }
 
+    public Computer(int ssd, String cpu) {
+        this.ssd = ssd;
+        this.cpu = cpu;
+    }
+
     public void printInfo() {
         System.out.println("Много мониторов: " + multiMonitor);
         System.out.println("SSD: " + ssd + " GB");
@@ -29,5 +34,7 @@ public class Computer {
         Computer comp = new Computer(true, 256, "AMD Ryzen 5 3600");
         comp.printInfo();
         Computer c = new Computer();
+        Computer comp2 = new Computer(512, "Intle 11400");
+        comp2.printInfo();
     }
 }
