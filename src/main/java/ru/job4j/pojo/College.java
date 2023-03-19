@@ -8,6 +8,8 @@ public class College {
         student.setFullName("Lukichev Artem Alexeevich");
         student.setGroup("3505A");
         student.setDateStart(new Date());
-        System.out.println("ФИО: " + student.getFullName() + ", группа: " + student.getGroup() + ", поступление: " + student.getDateStart());
+        System.out.println("ФИО: " + student.getFullName()
+                + ", группа: " + student.getGroup()
+                + ", поступление: " + student.getDateStart());
     }
 }
