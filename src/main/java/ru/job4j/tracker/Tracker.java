@@ -45,4 +45,14 @@ public class Tracker {
         }
         return rls;
     }
+
+    public boolean replace(int id, Item item) {
+        if (indexOf(id) != -1) {
+            item.setId(id);
+            items[indexOf(id)] = item;
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
