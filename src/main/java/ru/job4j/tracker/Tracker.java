@@ -52,19 +52,16 @@ public class Tracker {
             item.setId(id);
             items[indexOf(id)] = item;
         }
-            return rls;
+        return rls;
     }
 
     public boolean delete(int id) {
         boolean rls = indexOf(id) != -1;
         if (rls) {
-            System.arraycopy(items,
-                    indexOf(id) + 1,
-                    items, indexOf(id),
-                    size - indexOf(id));
+            System.arraycopy(items, indexOf(id) + 1, items, indexOf(id), size - indexOf(id) - 1);
             items[size - 1] = null;
             size--;
         }
-            return rls;
+        return rls;
     }
 }
