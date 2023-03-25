@@ -7,11 +7,11 @@ public class StartUI {
         boolean run = true;
         while (run) {
             showMenu();
-            System.out.println("Select: ");
+            System.out.print("Select: ");
             int select = Integer.parseInt(scanner.nextLine());
             if (select == 0) {
                 System.out.println("=== Create a new Item ===");
-                System.out.println("Enter name: ");
+                System.out.print("Enter name: ");
                 String name = scanner.nextLine();
                 Item item = new Item(name);
                 tracker.add(item);
@@ -27,9 +27,9 @@ public class StartUI {
                 }
             } else if (select == 2) {
                 System.out.println("=== Edit item ===");
-                System.out.println("Enter id: ");
+                System.out.print("Enter id: ");
                 int id = Integer.parseInt(scanner.nextLine());
-                System.out.println("Enter name: ");
+                System.out.print("Enter name: ");
                 String name = scanner.nextLine();
                 Item item = new Item(name);
                 if (tracker.replace(id, item)) {
@@ -60,7 +60,7 @@ public class StartUI {
                 }
             } else if (select == 5) {
                 System.out.println("=== Find item by name ===");
-                System.out.println("Enter name0: ");
+                System.out.print("Enter name: ");
                 String name = scanner.nextLine();
                 Item[] items = tracker.findByName(name);
                 if (items.length > 0) {
@@ -71,8 +71,7 @@ public class StartUI {
                     System.out.println("Заявки с именем: " + name + " не найдены.");
                 }
 
-            }
-            if (select == 6) {
+            } else if (select == 6) {
                 run = false;
             }
         }
