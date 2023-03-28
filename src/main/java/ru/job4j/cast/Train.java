@@ -6,3 +6,4 @@ public class Train implements Vehicle {
         System.out.println("Едет по рельсам");
     }
 }
+
