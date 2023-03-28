@@ -1,8 +1,10 @@
 package ru.job4j.oop;
 
-public class Car {
+public class Car extends Transport {
     private String brand;
     private String model;
+
+    public Car() { }
 
     public static TripComputer getTripCompute() {
         Car car = new Car("Марка", "Модель");
