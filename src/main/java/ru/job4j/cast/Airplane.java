@@ -5,5 +5,10 @@ public class Airplane implements Vehicle {
     public void move() {
         System.out.println("Летит по воздуху");
     }
+
+    @Override
+    public void steering() {
+        System.out.println("Меняет направление движения с помощью рулевых поверхностей");
+    }
 }
 
