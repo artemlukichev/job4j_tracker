@@ -44,12 +44,13 @@ public class StartUI {
     }
 
     public static void findItemById(Input input, Tracker tracker) {
-        System.out.println("=== Delete item ===");
+        System.out.println("=== Find item by id ===");
         int id = input.askInt("Enter id: ");
-        if (tracker.delete(id)) {
-            System.out.println("Заявка удалена успешно.");
+        Item item = tracker.findById(id);
+        if (item != null) {
+            System.out.println(item);
         } else {
-            System.out.println("Ошибка удаления заявки.");
+            System.out.println("Заявка с введенным id: " + id + " не найдена.");
         }
     }
 
