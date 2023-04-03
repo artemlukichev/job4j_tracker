@@ -17,3 +17,4 @@ public class Exit implements UserAction {
         return false;
     }
 }
+
