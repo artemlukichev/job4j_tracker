@@ -1,7 +1,5 @@
 package ru.job4j.tracker;
 
-import javax.swing.*;
-
 public class StartUI {
     public void init(Input input, Tracker tracker, UserAction[] actions) {
         boolean run = true;
@@ -26,11 +24,11 @@ public class StartUI {
         UserAction[] actions = {
                 new CreateAction(),
                 new ShowAction(),
-                new EditAction(),
+                new ReplaceAction(),
                 new DeleteAction(),
                 new FindByIdAction(),
                 new FindByNameAction(),
-                new ExitAction()
+                new Exit()
         };
         new StartUI().init(input, tracker, actions);
     }
